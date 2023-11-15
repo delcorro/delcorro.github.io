@@ -23,17 +23,18 @@ function calcularPago(){
     switch (categoria.value) {
         case "estudiante":
             total = total - (total * descEstudiante);
-            textoDescuento.textContent = `Obtuvo un descuento de $ ${total * descEstudiante }`;
+            textoDescuento.textContent = `Obtuvo un descuento de $ ${(cantidad.value * ticket) - total}`;
             totalPagar
             break;
         
         case "trainee":
             total = total - (total * descTrainee);
-            textoDescuento.textContent = `Obtuvo un descuento de $ ${total * descEstudiante }`;
-            break;  
+            textoDescuento.textContent = `Obtuvo un descuento de $ ${(cantidad.value * ticket) - total}`;
+            break; 
+             
         case "junior":
             total = total - (total * descJunior)
-            textoDescuento.textContent = `Obtuvo un descuento de $ ${total * descEstudiante }`;
+            textoDescuento.textContent = `Obtuvo un descuento de $ ${(cantidad.value * ticket) - total}`;
             break
         
         default:
